@@ -1,3 +1,5 @@
+; The program finds the level of a binary tree which contains the most elements and prints them
+
 ; my append function
 (
     defun my-append (lst1 lst2)
@@ -88,7 +90,7 @@
     )
 )
 
-(let ((lst '(A (B (D) (E)) (C (F) (G)))))
+(let ((lst '(A (B (D (H)) (E (I))) (C (F (J) (K)) (G (L))))))
     (format t "The level with the max number of elements is: ")
     (princ (get-level-with-max-elements lst))
     (fresh-line)
